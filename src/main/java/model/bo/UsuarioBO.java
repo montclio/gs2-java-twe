@@ -11,7 +11,7 @@ public class UsuarioBO {
     this.usuarioDAO = new UsuarioDAO();
     }
 
-    public int cadastrarUsuarioBO(UsuarioVO usuario) throws ClassNotFoundException, SQLException {
+    public UsuarioVO cadastrarUsuarioBO(UsuarioVO usuario) throws ClassNotFoundException, SQLException {
         return usuarioDAO.cadastrarUsuario(usuario);
     }
 

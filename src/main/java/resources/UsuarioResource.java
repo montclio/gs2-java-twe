@@ -35,8 +35,7 @@ public class UsuarioResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response cadastrarUsuario(UsuarioVO usuario) {
         try {
-            int idGerado = usuarioBO.cadastrarUsuarioBO(usuario);
-            usuario.setIdUsuario(idGerado);
+            UsuarioVO usuarioGerado = usuarioBO.cadastrarUsuarioBO(usuario);
             return Response.status(Response.Status.CREATED).entity(usuario).build();
         } catch (Exception e) {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)

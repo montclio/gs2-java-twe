@@ -18,8 +18,8 @@ public class UsuarioDAO {
     }
 
 
-    public int cadastrarUsuario(UsuarioVO usuario) {
-        int idUsuarioGerado = -1;
+    public UsuarioVO cadastrarUsuario(UsuarioVO usuario) {
+        UsuarioVO usuarioGerado = null;
 
         try {
             String sql = "INSERT INTO TB_TWE_USUARIO (NOME, SOBRENOME, DATA_NASCIMENTO, USUARIO_EMAIL, USUARIO_CEP, SENHA, PONTUACAO_USUARIO, SEXO)"
@@ -36,10 +36,17 @@ public class UsuarioDAO {
             stmt.setString(8, usuario.getSexo());
 
             stmt.executeUpdate();
-
             ResultSet rs = stmt.getGeneratedKeys();
-            if (rs.next()) {
-                idUsuarioGerado = rs.getInt(1); // O ID gerado pelo banco
+            if (rs.next()){
+                usuarioGerado = new UsuarioVO();
+                usuarioGerado.setNome(usuario.getNome());
+                usuarioGerado.setSobrenome(usuario.getSobrenome());
+                usuarioGerado.setDataNascimento(usuario.getDataNascimento());
+                usuarioGerado.setUsuarioEmail(usuario.getUsuarioEmail());
+                usuarioGerado.setUsuarioCep(usuario.getUsuarioCep());
+                usuarioGerado.setSenha(usuario.getSenha());
+                usuarioGerado.setPontuacaoUsuario(usuario.getPontuacaoUsuario());
+                usuarioGerado.setSexo(usuario.getSexo());
             }
         } catch (SQLException err) {
             throw new RuntimeException("Erro ao cadastrar o usuário: " + err.getMessage(), err);
@@ -52,7 +59,7 @@ public class UsuarioDAO {
                 throw new RuntimeException("Erro ao fechar conexão: " + e.getMessage(), e);
             }
         }
-        return idUsuarioGerado;
+        return usuarioGerado;
     }
 
 
