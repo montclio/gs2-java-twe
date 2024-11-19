@@ -26,6 +26,7 @@ public class UsuarioResource {
             }
             return Response.ok(usuario).build();
         } catch (Exception err){
+            err.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao consultar usuário: " + err.getMessage()).build();
         }
     }
@@ -42,4 +43,32 @@ public class UsuarioResource {
                     .entity("Erro ao cadastrar usuário: " + e.getMessage()).build();
         }
     }
+
+    @PUT
+    @Path("/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response atualizarUsuario(@PathParam("id") Long id, UsuarioVO usuarioAtualizado) {
+        try {
+            UsuarioBO usuarioBO = new UsuarioBO();
+
+            boolean atualizado = usuarioBO.atualizarUsuarioBO(id, usuarioAtualizado);
+
+            if (atualizado) {
+                return Response.ok(usuarioAtualizado).build();
+            } else {
+                return Response.status(Response.Status.NOT_FOUND)
+                        .entity("Usuário não encontrado ou não atualizado.")
+                        .build();
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity("Erro ao atualizar o usuário.")
+                    .build();
+        }
+    }
+
+
 }

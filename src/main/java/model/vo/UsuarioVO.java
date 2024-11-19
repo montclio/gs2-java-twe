@@ -1,12 +1,12 @@
 package model.vo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class UsuarioVO {
     private int idUsuario;
     private String nome;
     private String sobrenome;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private String usuarioEmail;
     private int usuarioCep;
     private String senha;
@@ -49,11 +49,11 @@ public class UsuarioVO {
         this.sobrenome = sobrenome;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

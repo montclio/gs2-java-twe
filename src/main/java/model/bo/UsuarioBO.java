@@ -24,8 +24,8 @@ public class UsuarioBO {
         usuarioDAO.deletarUsuario(idUsuario);
     }
 
-    public UsuarioVO atualizarUsuarioBO(UsuarioVO usario) throws ClassNotFoundException, SQLException{
-         return usuarioDAO.atualizarUsuario(usario);
+    public boolean atualizarUsuarioBO(Long idUsuario,UsuarioVO usario) throws ClassNotFoundException, SQLException{
+         return usuarioDAO.atualizarUsuario(idUsuario, usario);
     }
 
 }

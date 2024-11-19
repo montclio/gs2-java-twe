@@ -28,7 +28,7 @@ public class UsuarioDAO {
             PreparedStatement stmt = this.conexao.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getSobrenome());
-            stmt.setDate(3, new Date(usuario.getDataNascimento().getTime()));
+            stmt.setDate(3, java.sql.Date.valueOf(usuario.getDataNascimento()));
             stmt.setString(4, usuario.getUsuarioEmail());
             stmt.setInt(5, usuario.getUsuarioCep());
             stmt.setString(6, usuario.getSenha());
@@ -63,7 +63,7 @@ public class UsuarioDAO {
     }
 
 
-    public UsuarioVO atualizarUsuario(UsuarioVO usuario) {
+    public boolean atualizarUsuario(Long idUsuario, UsuarioVO usuario) {
         try {
             String sql = "UPDATE TB_TWE_USUARIO SET NOME = ?, SOBRENOME = ?, DATA_NASCIMENTO = ?, USUARIO_EMAIL = ?, "
                     + "USUARIO_CEP = ?, SENHA = ?, PONTUACAO_USUARIO = ?, SEXO = ? WHERE ID_USUARIO = ?";
@@ -71,15 +71,18 @@ public class UsuarioDAO {
             PreparedStatement stmt = this.conexao.prepareStatement(sql);
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getSobrenome());
-            stmt.setDate(3, new Date(usuario.getDataNascimento().getTime()));
+            stmt.setDate(3, java.sql.Date.valueOf(usuario.getDataNascimento()));
             stmt.setString(4, usuario.getUsuarioEmail());
             stmt.setInt(5, usuario.getUsuarioCep());
             stmt.setString(6, usuario.getSenha());
             stmt.setInt(7, usuario.getPontuacaoUsuario());
             stmt.setString(8, usuario.getSexo());
-            stmt.setInt(9, usuario.getIdUsuario());
+            stmt.setLong(9, idUsuario);
 
-            stmt.executeUpdate();
+            int linhasAfetadas = stmt.executeUpdate();
+
+
+            return linhasAfetadas > 0;
 
         } catch (SQLException err) {
             throw new RuntimeException("Erro ao atualizar o usuário: " + err.getMessage(), err);
@@ -92,8 +95,9 @@ public class UsuarioDAO {
                 throw new RuntimeException("Erro ao fechar conexão: " + e.getMessage(), e);
             }
         }
-        return usuario;
     }
+
+
 
 
     public UsuarioVO consultarUsuario(int idUsuario) {
@@ -110,7 +114,7 @@ public class UsuarioDAO {
                 usuario.setIdUsuario(rs.getInt("ID_USUARIO"));
                 usuario.setNome(rs.getString("NOME"));
                 usuario.setSobrenome(rs.getString("SOBRENOME"));
-                usuario.setDataNascimento(rs.getDate("DATA_NASCIMENTO"));
+                usuario.setDataNascimento(rs.getDate("DATA_NASCIMENTO").toLocalDate());
                 usuario.setUsuarioEmail(rs.getString("USUARIO_EMAIL"));
                 usuario.setUsuarioCep(rs.getInt("USUARIO_CEP"));
                 usuario.setSenha(rs.getString("SENHA"));
@@ -136,7 +140,7 @@ public class UsuarioDAO {
             String sql = "DELETE FROM TB_TWE_USUARIO WHERE ID_USUARIO = ?";
             PreparedStatement stmt = this.conexao.prepareStatement(sql);
             stmt.setInt(1, idUsuario);
-            stmt.executeUpdate(); // Executa o delete
+            stmt.executeUpdate();
 
         } catch (SQLException err) {
             throw new RuntimeException("Erro ao deletar o usuário: " + err.getMessage(), err);
