@@ -70,5 +70,21 @@ public class UsuarioResource {
         }
     }
 
+    @DELETE
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response excluirUsuario(@PathParam("id") int idUsuario) {
+        try {
+            usuarioBO.excluirUsuarioBO(idUsuario);
+
+            return Response.status(Response.Status.NO_CONTENT).build();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity("Erro ao excluir usuário: " + e.getMessage())
+                    .build();
+        }
+    }
 
 }
