@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E6F1476-6092-E855-969D-C0BF24D74C93" name="TB_TWE_RANKING">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>53E79782-04FC-DDD1-60CE-E094841CC35D</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ranking" id="DD78DCB6-707F-FCE5-EC38-DE1A38A6FCEC">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>6390D41B-57A3-3A10-775C-73A172F6878E</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc_ranking" id="A791D08E-D2B5-D5A3-117C-5D2DD101EA12">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>14760560-7F9A-B23B-0D13-3DE2C33302F2</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="posicao" id="3B5534AE-6102-2C13-AA64-2868467A0C21">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>07BB4493-0761-32DC-0B03-8650E94C6AD8</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3552D9CA-C301-1E74-9B33-0FD669F4F004" name="tb_twe_rank_id_rank_pk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>2AB85EB6-2B3A-8282-1782-BAF2BFE2B733</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD78DCB6-707F-FCE5-EC38-DE1A38A6FCEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CFB1EA5B-59D8-6235-29B5-7CEBDD817611" name="TB_TWE_EMP_PARCEIRAS">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:25:57 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_empresa_parc" id="0D2D23B9-11FB-DB58-C87E-8D53AF87DA04">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:26:25 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="razao_social" id="382AEDEF-6CFB-4BAA-A63D-40DB800FD936">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:26:37 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_fantasia" id="67D3C03E-7608-5D97-4D71-F43994D3E671">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:26:57 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="posicao" id="D2241C24-B983-2DC8-6C0D-8899864262DB">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:39:40 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_patrocionio" id="2050FC15-3E4F-BD89-1F2D-9FDAE61D9C3B">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:50:23 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,20,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E613724C-227D-0982-C30C-F80E0D546022" name="TB_TEW_EMP_PRACERIRAS PK">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:26:36 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D2D23B9-11FB-DB58-C87E-8D53AF87DA04</attributeRef>
+<attributeRef>382AEDEF-6CFB-4BAA-A63D-40DB800FD936</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

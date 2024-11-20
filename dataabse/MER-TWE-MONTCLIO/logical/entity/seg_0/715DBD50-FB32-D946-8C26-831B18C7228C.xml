@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="715DBD50-FB32-D946-8C26-831B18C7228C" name="TB_TWE_ALTERNATIVAS">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:52:04 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_alternativa" id="EFE13A59-B7C1-20E1-62DB-ECF87A8B01FA">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:52:15 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qtd_alternativas" id="331056B0-C249-811C-058E-27D876013D8A">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:52:36 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pergunta" id="77376F14-832E-819F-2F61-E0F5B4F69380">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:53:24 UTC</createdTime>
+<generatorID>35811321-8CA2-7346-DA51-7FBC9E52CE6B</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<referedAttribute>6C725623-160A-3BE4-EEEB-5710FCED0E26</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36290F9C-199C-EE2D-16DF-D9A335582A09" name="TB_TWE_ALTERNATIVAS PK">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:52:28 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EFE13A59-B7C1-20E1-62DB-ECF87A8B01FA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

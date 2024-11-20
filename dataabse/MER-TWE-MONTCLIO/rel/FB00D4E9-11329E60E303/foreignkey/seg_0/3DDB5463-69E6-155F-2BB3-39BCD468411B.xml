@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3DDB5463-69E6-155F-2BB3-39BCD468411B" containerWithKeyObject="EA425611-BEAA-46F4-9B2C-C8C740B59A38" localFKIndex="668A2E09-1BCE-00E2-3D8A-4CE00BA17AF9" name="tb_twe_empv_id_rank_fk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>48A622A3-31E8-8BA0-0903-67D26B67AF2C</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<referredTableLongName>TB_TWE_RANKING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E6F1476-6092-E855-969D-C0BF24D74C93</referredTableID>
+<keyObject>3552D9CA-C301-1E74-9B33-0FD669F4F004</keyObject>
+<referredKeyID>3552D9CA-C301-1E74-9B33-0FD669F4F004</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_ranking</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6BCE8F2D-7B09-3620-E11A-607D5908698D" name="TB_TWE_PERGUNTAS">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:16:43 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pergunta" id="6C725623-160A-3BE4-EEEB-5710FCED0E26">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:17:02 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pergunta" id="F4ED5E47-7010-E6BB-1739-4D4FB645E37E">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:17:18 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF6AB9AB-6452-48A3-52AE-CCA5471A8F3D" name="TB_TWE_PERGUNTAS PK">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 22:17:17 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<engineerTo>
+<item key="FB00D4E9-5D59-B3D3-E424-11329E60E303" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6C725623-160A-3BE4-EEEB-5710FCED0E26</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

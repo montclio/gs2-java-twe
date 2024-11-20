@@ -1,19 +1,22 @@
 package model.vo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PerguntaVO {
-    private int idPergunta;
+    private long idPergunta;
     private String pergunta;
 
-    public PerguntaVO(int idPergunta, String pergunta) {
-        this.idPergunta = idPergunta;
-        this.pergunta = pergunta;
+    public PerguntaVO() {
+        this.idPergunta = 0;
+        this.pergunta = null;
     }
 
-    public int getIdPergunta() {
+    public long getIdPergunta() {
         return idPergunta;
     }
 
-    public void setIdPergunta(int idPergunta) {
+    public void setIdPergunta(long idPergunta) {
         this.idPergunta = idPergunta;
     }
 

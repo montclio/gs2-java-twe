@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30194888-B1F1-839B-DF01-47AE4C4B463E" name="TB_TWE_USUA_ARTG">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<ordsAlias>relation_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usua_art" id="CD0323AD-4259-26BA-FECC-18A4076FB5AD">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-12 00:51:44 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_artigo" id="E34A2231-5F46-19A2-2DA7-E1A82D97ED61">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67F07507-993E-24DF-3D31-2E2B669C0F2F" referredColumn="552EC8CD-97D8-2234-057A-8B1DC4A9752A"/>
+</associations>
+</Column>
+<Column name="id_usuario" id="2300FCC0-EFB2-C149-8BA6-07E29781F1D5">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-12 02:24:25 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74E7752E-3184-B5D7-F1C9-2A07F88AC7F7" referredColumn="9FDA3ED7-00D7-3E4A-E1E8-7C5107285865"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F18C69D9-837E-8A3F-7306-B0EA0875AACD" name="tb_twe_id_usua_art_pk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD0323AD-4259-26BA-FECC-18A4076FB5AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A984D6D8-A867-0C31-21ED-15347360096D" name="tb_twe_art_id_art_fk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>9A0511E1-5DF1-DEF8-6C26-BF31EAA42D9D</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E34A2231-5F46-19A2-2DA7-E1A82D97ED61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B60B9DD-E2A2-6F80-8D70-D80A3D003463" name="tb_twe_usua_artg_id_usua_fk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-12 02:24:25 UTC</createdTime>
+<generatorID>194A8A70-C3A5-F313-A2B5-62C573B23406</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2300FCC0-EFB2-C149-8BA6-07E29781F1D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

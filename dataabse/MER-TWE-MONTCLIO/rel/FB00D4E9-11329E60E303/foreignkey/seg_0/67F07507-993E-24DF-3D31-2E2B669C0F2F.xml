@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="67F07507-993E-24DF-3D31-2E2B669C0F2F" containerWithKeyObject="30194888-B1F1-839B-DF01-47AE4C4B463E" localFKIndex="A984D6D8-A867-0C31-21ED-15347360096D" name="tb_twe_art_id_art_fk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>9A0511E1-5DF1-DEF8-6C26-BF31EAA42D9D</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<referredTableLongName>TB_TWE_ARTIGOS_EDUCATIVOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D269BBC2-59BD-53C3-614A-849EB5072759</referredTableID>
+<keyObject>4B0B28D1-249C-17C5-EDD8-09EEF47FFFEB</keyObject>
+<referredKeyID>4B0B28D1-249C-17C5-EDD8-09EEF47FFFEB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_artigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

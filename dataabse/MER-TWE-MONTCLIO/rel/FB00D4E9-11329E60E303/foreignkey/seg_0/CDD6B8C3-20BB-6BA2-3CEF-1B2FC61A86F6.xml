@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CDD6B8C3-20BB-6BA2-3CEF-1B2FC61A86F6" containerWithKeyObject="E041E443-CD68-0E90-9C7A-5C072BD638BA" localFKIndex="6E094C84-60D1-CA72-F750-4FEDF2E34053" name="tb_twe_emp_id_parc_fk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-11 23:08:57 UTC</createdTime>
+<generatorID>D70BB6B8-2F32-C6BE-9855-32361A0B7A48</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<referredTableLongName>TB_TWE_EMP_PARCEIRAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>76D4BFBF-0F3D-DDF1-4C35-C57978DAB0FD</referredTableID>
+<keyObject>482F4712-F1EE-29AD-D77D-D96C66568043</keyObject>
+<referredKeyID>482F4712-F1EE-29AD-D77D-D96C66568043</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_empresa_parc</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
