@@ -4,13 +4,22 @@ public class EmpresaVerdeVO {
     private int idEmpresa;
     private String nomeFantasia;
     private int cnpj;
+    private int posicao;
     private String fonte;
 
-    public EmpresaVerdeVO(int idEmpresa, String nomeFantasia, int cnpj, String fonte) {
+    public EmpresaVerdeVO() {
         this.idEmpresa = idEmpresa;
         this.nomeFantasia = nomeFantasia;
         this.cnpj = cnpj;
         this.fonte = fonte;
+    }
+
+    public int getPosicao() {
+        return posicao;
+    }
+
+    public void setPosicao(int posicao) {
+        this.posicao = posicao;
     }
 
     public int getIdEmpresa() {
