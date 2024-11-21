@@ -7,11 +7,19 @@ public class ArtigoEducativoVO {
     private String link;
     private String conteudoTexto;
 
-    public ArtigoEducativoVO(String tema, String autor, String link, String conteudoTexto) {
+    public ArtigoEducativoVO() {
         this.tema = tema;
         this.autor = autor;
         this.link = link;
         this.conteudoTexto = conteudoTexto;
+    }
+
+    public int getIdArtigo() {
+        return idArtigo;
+    }
+
+    public void setIdArtigo(int idArtigo) {
+        this.idArtigo = idArtigo;
     }
 
     public java.lang.String getTema() {
