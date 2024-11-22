@@ -4,9 +4,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import model.bo.EmpresaVerdePatrocinadoraBO;
-import model.bo.UsuarioBO;
 import model.vo.EmpresaVerdePatrocinadoraVO;
-import model.vo.UsuarioVO;
 
 import java.sql.SQLException;
 
