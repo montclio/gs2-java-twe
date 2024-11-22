@@ -1,15 +1,30 @@
 package model.vo;
 
-public class RankVO{
+public class RankVO extends EmpresaVerdeVO{
     private int idRank;
+    private String descRank;
     private int posicao;
-//    private Empresa empresa;
     private int pontuacao;
 
-    public RankVO(int idRank, int posicao) {
+    public RankVO() {
         this.idRank = idRank;
         this.posicao = posicao;
-//        this.empresa = empresa;
+    }
+
+    public String getDescRank() {
+        return descRank;
+    }
+
+    public void setDescRank(String descRank) {
+        this.descRank = descRank;
+    }
+
+    public int getPontuacao() {
+        return pontuacao;
+    }
+
+    public void setPontuacao(int pontuacao) {
+        this.pontuacao = pontuacao;
     }
 
     public int getIdRank() {
@@ -28,11 +43,4 @@ public class RankVO{
         this.posicao = posicao;
     }
 
-//    public Empresa getEmpresa() {
-//        return empresa;
-//    }
-//
-//    public void setEmpresa(Empresa empresa) {
-//        this.empresa = empresa;
-//    }
 }
