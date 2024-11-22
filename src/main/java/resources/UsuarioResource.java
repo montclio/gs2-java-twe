@@ -27,7 +27,7 @@ public class UsuarioResource {
             return Response.ok(usuario).build();
         } catch (Exception err){
             err.printStackTrace();
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao consultar usuário: " + err.getMessage()).build();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao consultar Usuário: " + err.getMessage()).build();
         }
     }
 
@@ -40,7 +40,7 @@ public class UsuarioResource {
             return Response.status(Response.Status.CREATED).entity(usuario).build();
         } catch (Exception e) {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-                    .entity("Erro ao cadastrar usuário: " + e.getMessage()).build();
+                    .entity("Erro ao cadastrar Usuário: " + e.getMessage()).build();
         }
     }
 
@@ -65,7 +65,7 @@ public class UsuarioResource {
         } catch (Exception e) {
             e.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-                    .entity("Erro ao atualizar o usuário.")
+                    .entity("Erro ao atualizar o Usuário.")
                     .build();
         }
     }
@@ -82,7 +82,7 @@ public class UsuarioResource {
         } catch (Exception e) {
             e.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-                    .entity("Erro ao excluir usuário: " + e.getMessage())
+                    .entity("Erro ao excluir Usuário: " + e.getMessage())
                     .build();
         }
     }

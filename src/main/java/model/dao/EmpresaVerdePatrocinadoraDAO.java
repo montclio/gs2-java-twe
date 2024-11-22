@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import model.dao.connection.ConexaoFactory;
 import model.vo.EmpresaVerdePatrocinadoraVO;
 
-public class EmpresaVerdePatrocinadoraDAO {
+public class EmpresaVerdePatrocinadoraDAO extends EmpresaVerdeDAO{
     public Connection conexao;
 
     public EmpresaVerdePatrocinadoraDAO() throws ClassNotFoundException, SQLException {

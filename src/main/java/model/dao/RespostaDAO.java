@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class RespostaDAO {
+public class RespostaDAO extends PerguntaDAO{
     public Connection conexao;
 
     public RespostaDAO() throws ClassNotFoundException, SQLException {

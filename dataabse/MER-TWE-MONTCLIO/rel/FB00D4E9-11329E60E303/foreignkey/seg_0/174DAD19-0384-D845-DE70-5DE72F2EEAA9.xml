@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="174DAD19-0384-D845-DE70-5DE72F2EEAA9" containerWithKeyObject="40EC93A1-2DE4-2A81-3A8F-883B3A9BFA5B" localFKIndex="6D32FC9A-E5CC-1769-897D-4D69F54D3C7D" name="tb_twe_quiz_tb_twe_p_id_p_fk">
+<createdBy>leona</createdBy>
+<createdTime>2024-11-21 21:05:50 UTC</createdTime>
+<generatorID>AF6AB9AB-6452-48A3-52AE-CCA5471A8F3D</generatorID>
+<ownerDesignName>MER-TWE-MONTCLIO</ownerDesignName>
+<referredTableLongName>TB_TWE_PERGUNTAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16309D06-6E9F-25D4-DAED-8E4E0227C39D</referredTableID>
+<keyObject>F418B442-4049-FB53-F935-DAD2C2216CD5</keyObject>
+<referredKeyID>F418B442-4049-FB53-F935-DAD2C2216CD5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pergunta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

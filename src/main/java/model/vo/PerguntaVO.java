@@ -12,7 +12,7 @@ public class PerguntaVO {
         this.pergunta = null;
     }
 
-    public long getIdPergunta() {
+    public int getIdPergunta() {
         return idPergunta;
     }
 

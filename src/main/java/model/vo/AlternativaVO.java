@@ -1,11 +1,11 @@
 package model.vo;
 
 
-public class AlternativaVO {
+public class AlternativaVO extends PerguntaVO {
     private int idAlternativa;
     private String descAlternativa;
 
-    public AlternativaVO(int idAlternativa, String descAlternativa) {
+    public AlternativaVO() {
         this.idAlternativa = idAlternativa;
         this.descAlternativa = descAlternativa;
     }
