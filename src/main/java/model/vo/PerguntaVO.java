@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PerguntaVO {
-    private long idPergunta;
+    private int idPergunta;
     private String pergunta;
 
     public PerguntaVO() {
@@ -16,7 +16,7 @@ public class PerguntaVO {
         return idPergunta;
     }
 
-    public void setIdPergunta(long idPergunta) {
+    public void setIdPergunta(int idPergunta) {
         this.idPergunta = idPergunta;
     }
 
