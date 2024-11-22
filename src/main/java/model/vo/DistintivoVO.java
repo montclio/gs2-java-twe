@@ -1,10 +1,10 @@
 package model.vo;
 
-public class DistintivoVO{
+public class DistintivoVO extends UsuarioVO{
     private int idDistintivo;
     private String nomeDistintivo;
 
-    public DistintivoVO(int idDistintivo, String nomeDistintivo) {
+    public DistintivoVO() {
         this.idDistintivo = idDistintivo;
         this.nomeDistintivo = nomeDistintivo;
     }

@@ -48,7 +48,7 @@ public class UsuarioDAO {
                 usuarioGerado.setSexo(usuario.getSexo());
             }
         } catch (SQLException err) {
-            throw new RuntimeException("Erro ao cadastrar o usuário: " + err.getMessage(), err);
+            throw new RuntimeException("Erro ao cadastrar o Usuário: " + err.getMessage(), err);
         } finally {
             try {
                 if (this.conexao != null) {
@@ -84,7 +84,7 @@ public class UsuarioDAO {
             return linhasAfetadas > 0;
 
         } catch (SQLException err) {
-            throw new RuntimeException("Erro ao atualizar o usuário: " + err.getMessage(), err);
+            throw new RuntimeException("Erro ao atualizar o Usuário: " + err.getMessage(), err);
         } finally {
             try {
                 if (this.conexao != null) {
@@ -142,7 +142,7 @@ public class UsuarioDAO {
             stmt.executeUpdate();
 
         } catch (SQLException err) {
-            throw new RuntimeException("Erro ao deletar o usuário: " + err.getMessage(), err);
+            throw new RuntimeException("Erro ao deletar o Usuário: " + err.getMessage(), err);
         } finally {
             try {
                 if (this.conexao != null) {
